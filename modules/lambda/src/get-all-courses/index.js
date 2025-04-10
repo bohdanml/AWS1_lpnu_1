@@ -1,6 +1,6 @@
 const AWS = require("aws-sdk");
 const dynamodb = new AWS.DynamoDB({
-  region: process.env.AWS_REGION,
+region: process.env.AWS_REGION,
   apiVersion: "2012-08-10"
 });
 
@@ -27,3 +27,4 @@ exports.handler = (event, context, callback) => {
     }
   });
 };
+
