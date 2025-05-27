@@ -91,7 +91,7 @@ module "lambda_get_all_courses" {
   source_path = "${path.module}/src/get-all-courses"
 
   environment_variables = {
-    TABLE_NAME = var.courses_table
+    TABLE_COURSES = var.courses_table
   }
   attach_policy_statements = true
 
